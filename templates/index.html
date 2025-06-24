@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cakery - Delicious Cakes</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+<header>
+    <div class="container">
+      <h1 class="logo">Cakery</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<section class="hero">
+  <div class="container">
+    <h2>Delicious Cakes </h2>
+    <p>Freshly baked and beautifully decorated cakes for all occasions.</p>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+      <a href="#menu" class="btn">See Menu</a>
+    </div>
+  </div>
+</section>
+
+
+  <section id="about" class="about-section container">
+    <h3>About Us</h3>
+    <p>At Cakery, we craft exquisite cakes that delight your taste buds and make every celebration special.</p>
+    <p>
+    Welcome to <strong>Cakery</strong>, your destination for freshly baked delights that make every moment sweeter. 
+    We are a passionate team of bakers and artists who believe that cakes are not just desserts—they are experiences. 
+    From classic chocolate indulgence to trendy red velvet and creamy cheesecakes, each creation is crafted with love, 
+    premium ingredients, and a sprinkle of joy. Whether it's a birthday, wedding, or a simple celebration, 
+    our goal is to make your occasion truly unforgettable with the perfect cake.
+  </p><div style="display: flex; flex-wrap: wrap; align-items: center; gap: 30px;">
+    <div style="flex: 1;">
+      <img src="{{ url_for('static', filename='images/about_cacke.jpg') }}" alt="About Cakery" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 8px #f0c1a4;">
+    </div>
+    <div style="flex: 1;">
+      <p style="font-size: 1.1rem; color: #555;">
+        At <strong>Cakery</strong>, we believe every cake tells a story. Whether it's for a birthday, wedding, or a sweet treat just because — we craft every dessert with care, passion, and high-quality ingredients. Our team is dedicated to creating visually stunning and delicious cakes that leave lasting memories.
+      </p>
+      <a href="#menu" class="btn" style="margin-top: 15px; display: inline-block;">Explore Our Menu</a>
+    </div>
+  </div>
+
+  </section>
+
+  <section id="menu" class="menu-section container">
+    <h3>Our Menu</h3>
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="{{ url_for('static', filename='images/chocolate_cake.jpg') }}" alt="Chocolate Cake" />
+        <h4>Chocolate Cake</h4>
+        <p>
+  Our <strong>Chocolate Cake</strong> is a rich, moist, and decadent dessert made with premium cocoa, layered with smooth chocolate ganache, and topped with elegant swirls of frosting. Whether for birthdays, celebrations, or late-night cravings, this timeless classic never fails to satisfy your sweet tooth. Every bite melts in your mouth, delivering the perfect balance of sweetness and indulgence.
+</p>
+
+      </div>
+      <div class="menu-item">
+        <img src="{{ url_for('static', filename='images/red_velvet.jpg') }}" alt="Red Velvet Cake" />
+        <h4>Red Velvet Cake</h4>
+        <p>
+  Our <strong>Red Velvet Cake</strong> is a moist and tender cake with a subtle cocoa flavor and a striking deep red color. It's layered with creamy, tangy cream cheese frosting that perfectly balances sweetness and richness. This classic cake is a favorite for celebrations and is sure to delight with every bite.
+</p>
+
+      </div>
+      <div class="menu-item">
+        <img src="{{ url_for('static', filename='images/cheesecake.jpg') }}" alt="Cheesecake" />
+        <h4>Cheesecake</h4>
+        <p>
+  Our <strong>Cheesecake</strong> is a rich and creamy delight, made with smooth cream cheese on a buttery graham cracker crust. Each slice melts in your mouth with a perfect balance of sweetness and tang. Topped with fresh fruits or a drizzle of berry sauce, it's an elegant dessert ideal for any occasion.
+</p>
+      </div>
+      <div class="menu-item">
+        <img src="{{ url_for('static', filename='images/rassbery_cacke.jpg') }}" alt="Rassbery cake" />
+        <h4>Rassbery cake</h4>
+        <p>
+  Our <strong>Raspberry Cake</strong> is a delightful treat layered with soft vanilla or almond sponge and filled with luscious raspberry compote. The natural tartness of fresh raspberries pairs beautifully with smooth buttercream or cream cheese frosting, creating a perfect balance of fruity and sweet. It's a refreshing choice for summer parties, anniversaries, or anyone who loves berry-filled desserts.
+</p>
+      </div>
+            <div class="menu-item">
+        <img src="{{ url_for('static', filename='images/Rainbow_Cake.jpg') }}" alt="Rainbow Cake" />
+        <h4>Rainbow Cake</h4>
+        <p>
+  Our <strong>Rainbow Cake</strong> is a vibrant and cheerful dessert made with six soft, colorful layers stacked high and frosted with smooth vanilla buttercream. Each bite offers a burst of color and flavor, making it perfect for birthdays, celebrations, or simply bringing smiles. It’s not just a cake — it’s a party in every slice!
+</p>
+      </div>
+                  <div class="menu-item">
+        <img src="{{ url_for('static', filename='images/Mango-Rasmalai-Fusion-Cake.jpg') }}" alt="Mango-Rasmalai-Fusion-Cake"/>
+        <h4>Mango-Rasmalai-Fusion-Cake</h4>
+        <p>
+  Our <strong>Mango Rasmalai Fusion Cake</strong> is a luxurious blend of traditional Indian flavors and modern cake artistry. Soft vanilla sponge is soaked in saffron and cardamom-infused milk, layered with creamy rasmalai filling, and topped with fresh mango pulp. Garnished with pistachios and edible silver, this cake delivers a royal dessert experience in every bite.
+</p>
+      </div>
+    </div>
+  
+  </section>
+
+<section id="testimonials" class="testimonials container">
+  <h3>What Our Customers Say</h3>
+  
+  <div class="testimonial-boxes">
+    <div class="testimonial">
+      <p>"The chocolate cake I ordered for my son’s birthday was absolutely delicious. The design was beautiful and everyone loved it!"</p>
+      <footer>- Anjali R.</footer>
+    </div>
+    <div class="testimonial">
+      <p>"I tried the red velvet cupcakes for the first time, and now I’m hooked! Soft, rich, and perfectly sweet."</p>
+      <footer>- Sneha K.</footer>
+    </div>
+    <div class="testimonial">
+      <p>"Cakery never fails to amaze. Their custom anniversary cake looked stunning and tasted even better!"</p>
+      <footer>- Rohit M.</footer>
+    </div>
+    <div class="testimonial">
+      <p>"Friendly service, quick delivery, and amazing flavors. The cheesecake was the best I’ve ever had!"</p>
+      <footer>- Meera S.</footer>
+    </div>
+    <div class="testimonial">
+      <p>"The cakes are not just desserts—they are edible art. I highly recommend Cakery for all special occasions."</p>
+      <footer>- Kunal D.</footer>
+    </div>
+  </div>
+</section>
+
+
+
+  <section id="contact" class="contact-section container">
+    <h3>Contact Us</h3>
+
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <div class="flash-msg">
+          {% for message in messages %}
+            <p>{{ message }}</p>
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endwith %}
+
+    <form method="POST" action="{{ url_for('contact') }}">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+
+
+
+  <footer>
+    <p>&copy; 2025 Cakery. All rights reserved.</p>
+  </footer>
+</body>
+</html>
