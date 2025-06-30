@@ -19,5 +19,19 @@ def contact():
     flash("Thank you for contacting us, we will get back to you soon!")
     return redirect(url_for('home'))
 
+
+@app.route('/feedback', methods=['GET', 'POST'])
+def feedback():
+    if request.method == 'POST':
+        name = request.form.get('name')
+        rating = request.form.get('rating')
+        comments = request.form.get('comments')
+        
+        # You can store the feedback in DB or send it via email
+        flash("Thank you for your feedback!")
+        return redirect(url_for('feedback'))
+
+    return render_template('feedback.html')
+
 if __name__ == "__main__":
     app.run(debug=True)
